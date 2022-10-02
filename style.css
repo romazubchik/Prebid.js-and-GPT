@@ -1,0 +1,54 @@
+body {
+    background-size: cover;
+}
+
+dialog {
+    background: rgba(255, 255, 255, 0.7);
+    word-wrap: break-word;
+    width: 95%; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.color {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+}
+ 
+.color th, .color td:first-child {
+    background: #47b4f8;
+    color: white;
+    padding: 10px 20px;
+}
+ 
+.color th, .color td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+ 
+.color td {
+    background: #D8E6F3;
+}
+ 
+.color th:first-child, .color td:first-child {
+    text-align: left;
+}
+
+.button {
+    background-color: #47b4f8; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
