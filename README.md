@@ -1,12 +1,14 @@
 # Prebid.js and GPT
 
-## Start
+## Before testing
+Firstly we need to run our server:
+node server.js
 
->The first thing we do is start the **server.js**
+## Testing
+We can use both ways for testing:
 
->To work with iframe, launch the **iframeClient.js**
+### Iframe + SSR Html
+We are creating a `<iframe>` element with src attribute that uses our server's Html page and sends params for rendering this to server side. For testing, we should put only iframeClient.js on a site.
 
->To work with a clean DOM, launch the **clientNative.js** 
-
-**clientNative.js** associated with **index.js**
-**index.js** associated with **style.css**
+### Client side getting information
+We are working only in the browser with our SSR render HTML and put data directly to DOM with JS. For testing, we need to put 3 files to a site:  index.html, clientNative.js and style.css.
